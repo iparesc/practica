@@ -1,0 +1,16 @@
+<p>
+  ID de la tarea a consultar 192.168.0.42:3000/todos
+</p>
+<input type="text" [(ngModel)]="id" placeholder="Mete la Url de la tarea"><button (click)=buscarTareas()>Consultar</button>
+<div id="todos">
+
+ 
+    <ul>
+      <li *ngFor="let practica of practicas">
+          
+              <span>{{practica.id}} {{practica.title}}</span>
+                                     
+      </li>      
+    </ul>
+ 
+</div>
